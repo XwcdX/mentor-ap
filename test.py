@@ -21,27 +21,11 @@ def fibo (n, memo={}):
     if n<=0:
         return 0
     if n==1:
-        return 1, None
+        return 1
     else: 
         memo[n] = fibo(n-1) + fibo(n-2)
         print(memo)
-        res = memo[n]
-        return res, memo
+        res =memo[n]
+        return res
         
-# dic = {
-#     64 : 'a',
-#     65 : 'b'
-# }
-
-# for i,j in dic.items():
-#     print(i, '->', j)
-
-try:
-    print('1'+2)
-except:
-    print('salah 1')
-
-try:
-    print('1'*2)
-except:
-    print('input salah')
+fibo(996)
