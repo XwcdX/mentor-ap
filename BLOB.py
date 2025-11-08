@@ -18,7 +18,7 @@ def cari_ubah_x(rowNow, colNow):
     if matrix[rowNow][colNow] != 'x':
         return
     
-    matrix[rowNow][colNow] = '.'
+    matrix[rowNow][colNow] = 'o'
     
     # 8 arah mata angin
     """
